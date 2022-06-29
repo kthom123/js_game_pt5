@@ -18,7 +18,7 @@ class Raven {
     this.directionY = Math.random() * 5 - 2.5;
     this.markedForDeletion = false;
     this.image = new Image();
-    this.image.src = 'raven.png';
+    this.image.src = './images/raven.png';
     this.spriteWidth = 271;
     this.spriteHeight = 194;
   }
