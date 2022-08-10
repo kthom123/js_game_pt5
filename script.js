@@ -3,6 +3,10 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+let timeToNextRaven = 0;
+let ravenInterval = 500;
+let lastTime = 0;
+
 let ravens = [];
 class Raven {
   constructor(){
@@ -23,6 +27,13 @@ class Raven {
 
 function animate(timestamp){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  let deltatime = timestamp - lastTime;
+  lastTime = timestamp;
+  timeToNextRaven += deltatime;
+  if (timeToNextRaven > ravenInterval){
+    ravens.push(new Raven());
+    timeToNextRaven = 0;
+  }
 
   requestAnimationFrame(animate);
 }
