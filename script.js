@@ -22,5 +22,8 @@ class Raven {
 }
 
 function animate(timestamp){
-  ctx.clear
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  requestAnimationFrame(animate);
 }
+animate();
