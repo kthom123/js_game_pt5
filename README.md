@@ -9,5 +9,5 @@ A mini game where players can destroy birds. Players get 1 score point for each 
 ![Screen Shot 2022-08-15 at 9 51 23 PM](https://user-images.githubusercontent.com/99015262/184638848-d59ab94c-fd1e-4301-9e4d-237ae2937719.png)
 ![Screen Shot 2022-08-15 at 9 51 31 PM](https://user-images.githubusercontent.com/99015262/184638853-faaa3189-25de-44b6-811e-b3c4a6c725be.png)
 
-## Check it out:
+### Check it out:
 https://kthom123.github.io/js_game_pt5/
